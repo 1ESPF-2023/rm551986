@@ -36,31 +36,83 @@
 //Math.Random
 //Math.floor
 
-let tmp = '';
+// let tmp = '';
 
 
-function mudaCor() {
+// function mudaCor() {
 
-    let r = 0;
-    let g = 0; 
-    let b = 0;    
-
-
-    r = Math.round(Math.random() * 255);
-    g = Math.round(Math.random() * 255);
-    b = Math.round(Math.random() * 255);
-
-    const cabecalho = document.querySelector(".cabecalho");
-    const banner1 = document.querySelector(".banner-1");
-
-    cabecalho.style.backgroundColor = 'rgb(${r},${g},${b})';
-    banner1.style.backgroundColor = 'rgb(${r},${g},${b})';
+//     let r = 0;
+//     let g = 0; 
+//     let b = 0;    
 
 
+//     r = Math.round(Math.random() * 255);
+//     g = Math.round(Math.random() * 255);
+//     b = Math.round(Math.random() * 255);
 
-    tmp = setTimeout(mudaCor,5000)
+//     const cabecalho = document.querySelector(".cabecalho");
+//     const banner1 = document.querySelector(".banner-1");
 
+//     cabecalho.style.backgroundColor = 'rgb(${r},${g},${b})';
+//     banner1.style.backgroundColor = 'rgb(${r},${g},${b})';
+
+
+
+//     tmp = setTimeout(mudaCor,1000)
+
+// }
+
+
+// mudaCor();
+
+
+
+
+function mudaBanner() {
+    const imgElement1 = document.querySelector(".banner-1 img"); 
+    // console.log(imgElement1); 
+    let nr = Math.ceil(Math.random() * 3);
+    imgElement1.src = "./img/banner-lateral-"+nr+".png";
+    // imgElement1.src = ./img/banner-lateral-"+nr+".png";
+
+    const imgElement2 = document.querySelector(".banner-2 img"); 
+    // console.log(imgElement1); 
+    nr = Math.ceil(Math.random() * 3);
+    imgElement2.src = "./img/banner-lateral-"+nr+".png";
+    // imgElement1.src = ./img/banner-lateral-"+nr+".png";
+    
+
+    setTimeout(mudaBanner, 2000)
 }
 
+mudaBanner();
 
-mudaCor();
+const botao = document.querySelector("button");
+// // console.log(botao);
+
+// const botoes = document.querySelectorAll("button");
+
+// botoes.forEach( (botao)=>{
+//     botao
+
+
+// })
+
+botao.addEventListener("click", function(){
+    if(this.textContent == "LIGAR"){
+        const imgElement = document.querySelector("img[alt='lampada apagada']")
+        imgElement.src = "./img/pic_bulbon.gif" 
+        imgElement.alt = "lampada acesa"
+        this.textContent = "DESLIGAR"
+    }else{
+        const imgElement = document.querySelector("img[alt='lampada acesa']")
+        imgElement.src = "./img/pic_bulboff.gif";
+        imgElement.alt = "lampada apagada"
+        this.textContent = "LIGAR"
+    }
+
+
+        
+    }
+);
+
