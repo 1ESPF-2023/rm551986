@@ -1,0 +1,22 @@
+<!-- action do formulario direciona todo o fluxo de informação do formulário quando clicamos no botão de submissão do forms 
+todos os botões submetem o formulário, eles trabalham com um evento chamado submit 
+
+no html trabalhams com eventos em elementos 
+
+O GOOGLE
+metodo get usa o metodo http serve para transmitir informações, transmite os dados do formulário via url
+apenas cabem 255 caracteres, se eu quisesse enviar mais eu teria de trocar o método da página para o método post, assim ele vai mandar pelo corpo do protocolo 
+
+nao da para usar um formulário usando get, pq ai a senha iria aparecer no url, ou seja quando é para fazer login ou algo assim que não seja para ficar aparecendo la em cima devemos utilizar o post 
+
+
+
+pagina dinamica é onde eu coloco informação e ele devolve uma resposta montada com base naquilo que você submeteu, com base na informação que voce escreveu, poderia ser ate vc clicar em um link e a página mudar com base nisso 
+
+
+a página estática ela não muda quando acessamos, ela será sempre a mesma coisa, o html é sempre o mesmo, 
+
+a dinamica o html muda sempre com base naquilo que você pesquisa 
+
+formulario eh o usuario entrando em contato com o sistema
+-->
