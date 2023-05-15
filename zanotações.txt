@@ -20,3 +20,37 @@ a dinamica o html muda sempre com base naquilo que você pesquisa
 
 formulario eh o usuario entrando em contato com o sistema
 -->
+
+
+
+
+
+
+ESPAÇO EDGE 
+Notas aula de edge 
+
+arduino nao eh um micrcontroladore eh uma plataforma de prototipação
+usamos a versão Uno R3 
+o arduino eh uma placa um pouco mais avançada, usa usb e tudo mais, 
+microcontrolador em soquete eu posso remover, já quando é soldado precisa de assistencia tecnica e tudo mais 
+A interface usb que liga o arduino no computador é o que torna o arduino mais caro 
+quando a corretnte eletrica excede um tal valor ele queima um fusível para não queimar o resto do circuito 
+
+
+Tem uma parte em que a alimentação do arduino é importante, ccomo alimentar o arduino?
+bateria de 9V, bateria solar, bateria recarregável, 
+Para ligar na internet basta conectar uma placa que recebe um chip e possui uma antena, com um chip e tudo mais tudo pela rede 3g 
+
+
+edge eh porque hoje levamos o rpocessamento apra a borda da rede
+
+portas que tem o ~ significam que as portas sao multifunção, da p usar mais coisas 
+PWM 
+
+
+ao ligar um led ao ardduino, a corrente máxima que pode ser drenada da porta usb eh de 20 mA 
+quando colocamos um resistor entre a entrada do sub e o led sendo assim ele limita a energia, para que passe no máximo 20mA, para que não haja componentes que consumam mais energia do que o micrcontrolador pode fornecer 
+
+
+sensor não deve esquentar, principalmente em microcontrolador,
+ja processador é outra coisa, precisa de cooler normalmente
